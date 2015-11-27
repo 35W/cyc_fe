@@ -42,6 +42,11 @@ module.exports = function(environment) {
   if (environment === 'production') {
 
   }
+  
+  ENV['ember-simple-auth'] = {
+    authenticationRoute: 'login',
+    routeAfterAuthentication: 'home'
+  };
 
   return ENV;
 };
