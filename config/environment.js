@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'auth',
+    modulePrefix: 'cyc_fe',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
