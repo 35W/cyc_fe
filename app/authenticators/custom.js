@@ -34,7 +34,7 @@ export default Base.extend({
             });
           });
         }, function(xhr, status, error) {
-          var response = xhr.responseText;
+          var response = xhr.responseJSON;
           Ember.run(function() {
             reject(response);
           });

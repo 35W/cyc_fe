@@ -8,7 +8,7 @@ export default Ember.Controller.extend({
       let { identification, password } = this.getProperties( 'identification', 'password' );
       var options = { identification: identification, password: password }
       this.get('session').authenticate('authenticator:custom', options).catch((reason) => {
-        this.set('errorMessage', reason.error || reason);
+        this.set('errorMessage', reason.errors[0] || reason);
       });
     }
   }
