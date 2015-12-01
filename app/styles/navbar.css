@@ -1,0 +1,31 @@
+.thrity_five {
+  color: #4186c4;
+  font-weight: bold;
+  font-size: 35px;
+  letter-spacing: -4px;
+}
+.w {
+  font-size: 35px;
+  padding-left: 1px;
+  font-weight: bold;
+  color: #000;
+}
+.navbar-default .navbar-brand {
+  color: #000;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #428bca;
+}
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding: 0 20px;
+  /*border: 1px solid transparent;*/
+  border: none;
+}
+.navbar-default {
+  background-color: #fff;
+  /*border-color: #e7e7e7;*/
+}
