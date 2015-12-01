@@ -5,6 +5,10 @@ body {
   font-family: 'Work sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+[data-ember-action] {
+  cursor: pointer;
+}
+
 #main {
   padding-right: 15px;
   padding-left: 35px;
