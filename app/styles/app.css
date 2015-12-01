@@ -4,6 +4,13 @@ input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 
+.navbar-default .navbar-brand {
+  color: #000;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #428bca;
+}
+
 .form-signin {
   max-width: 300px;
   padding: 19px 29px 29px;
