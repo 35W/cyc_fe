@@ -3,6 +3,7 @@
 
 body {
   font-family: 'Work sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #000;
 }
 
 [data-ember-action] {
@@ -11,7 +12,7 @@ body {
 
 #main {
   padding-right: 15px;
-  padding-left: 35px;
+  padding-left: 40px;
   margin-right: auto;
   margin-left: auto;
 }

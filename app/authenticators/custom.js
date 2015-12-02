@@ -27,7 +27,7 @@ export default Base.extend({
         contentType: 'application/json;charset=utf-8',
         dataType: 'json'
         }).then(function(response) {
-          console.log( response )
+          //console.log( response )
           Ember.run(function() {
             resolve({
               token: response.auth_token,
