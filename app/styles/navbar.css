@@ -18,7 +18,8 @@
 }
 
 a.navbar-brand {
-  width: 120px;
+  width: 145px;
+  height: 70px;
 }
 a.navbar-brand img {
   width: 100%;
@@ -26,7 +27,7 @@ a.navbar-brand img {
 
 .navbar {
   position: relative;
-  min-height: 50px;
+  min-height: 70px;
   margin-bottom: 30px;
   margin-top: 10px;
   padding: 0 20px;
@@ -34,6 +35,9 @@ a.navbar-brand img {
 }
 .navbar-default {
   background-color: #fff;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: none;
 }
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:focus {
   color: #000;
@@ -45,7 +49,7 @@ a.navbar-brand img {
 }
 .navbar-default .navbar-nav > .dropdown.open > a.dropdown-toggle {
   background-color: #fff;
-  border-bottom: 1px solid #ccc;
+  /*border-bottom: 1px solid #ccc;*/
   margin-bottom: 2px;
   color: #000;
 }
