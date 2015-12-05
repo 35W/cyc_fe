@@ -36,6 +36,10 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    
+    ENV.APP.API_VERSION = "v1";
+    ENV.APP.API_ENDPOINT = "http://localhost:3000";
+    ENV.APP.AUTH_ENDPOINT = "http://localhost:3000/v1/signin";
   }
 
   if (environment === 'test') {

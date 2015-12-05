@@ -2,7 +2,7 @@ import Ember from 'ember';
 import Base from 'ember-simple-auth/authenticators/base';
 
 export default Base.extend({
-  tokenEndpoint: 'http://localhost:3000/v1/signin',
+  tokenEndpoint: CycFe.AUTH_ENDPOINT,
   
   restore(data) {
     //console.log( data.token )

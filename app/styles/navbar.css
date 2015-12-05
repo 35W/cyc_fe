@@ -49,7 +49,7 @@ a.navbar-brand img {
 }
 .navbar-default .navbar-nav > .dropdown.open > a.dropdown-toggle {
   background-color: #fff;
-  /*border-bottom: 1px solid #ccc;*/
+  border-bottom: 1px solid #ccc;
   margin-bottom: 2px;
   color: #000;
 }
