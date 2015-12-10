@@ -6,11 +6,20 @@ export default Ember.Route.extend({
 //     console.log( "BeforeHome:model" )
 //   },
 //   
-  model() {
-    return this.store.findAll( 'user' );
+
+  queryParams: {
+    page: {
+      refreshModel: true
+    }
   },
-//   
-//   afterModel() {
-//     console.log( "AfterHome:model" )
-//   }
+
+  model( params ) {
+    //console.log( params )
+    var users = this.store.query( 'user',  { page: { number: params.page } } );
+    return users;
+  },
+  
+  afterModel( model ) {
+    model.set( "links", this.store._metadataFor( "user" ) )
+  }
 });
