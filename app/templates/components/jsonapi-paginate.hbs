@@ -1,0 +1,31 @@
+<ul class="pagination">
+  {{#if prevPage}}
+    <li>
+      {{#link-to "admin.users" (query-params page=prevPage per_page=perPage)}}&laquo;{{/link-to}}
+    </li>
+  {{else}}
+    <li class="disabled">
+      <a href="javascript:void(0)">&laquo;</a>
+    </li>
+  {{/if}}
+
+  {{#each pages as |page|}}
+    {{#if page.ellipsis}}
+      <li class="ellipsis">&hellip;</li>
+    {{else}}
+      <li class="{{if page.isCurrent "active"}}">
+        {{link-to page.number "admin.users" (query-params page=page.number per_page=perPage)}}
+      </li>
+    {{/if}}
+  {{/each}}
+
+  {{#if nextPage}}
+    <li>
+      {{#link-to "admin.users" (query-params page=nextPage per_page=perPage)}}&raquo;{{/link-to}}
+    </li>
+  {{else}}
+    <li class="disabled">
+      <a href="javascript:void(0)">&raquo;</a>
+    </li>
+  {{/if}}
+</ul>
