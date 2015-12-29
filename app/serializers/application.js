@@ -7,5 +7,9 @@ export default DS.JSONAPISerializer.extend({
       store._setMetadataFor( primaryModelClass.modelName, payload.page);
     }
     return this._super(...arguments);
+  },
+
+  keyForAttribute (attr, method) {
+    return Ember.String.underscore(attr);
   }
 });

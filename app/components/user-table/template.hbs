@@ -1,0 +1,27 @@
+<h3>admin/<b>users</b></h3>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      {{#sorting-for "id" content}}
+        ID
+      {{/sorting-for}}
+      {{#sorting-for "email" content}}
+        Email
+      {{/sorting-for}}
+      {{#sorting-for "first_name" content}}
+        First Name
+      {{/sorting-for}}     
+      {{#sorting-for "last_name" content}}
+        Last Name
+      {{/sorting-for}}
+    </tr>
+  </thead>
+  <tbody>
+    {{#each content as |user|}}
+      {{#user-row user=user}}{{/user-row}}
+    {{/each}}
+  </tbody>
+</table>
+
+{{jsonapi-paginate content=content}}

@@ -1,7 +1,2 @@
-<h3>admin/<b>users</b></h3>
+{{#user-table content=content}}{{/user-table}}
 
-{{#each model as |user|}}
-  {{#user-record user=user}}{{/user-record}}
-{{/each}}
-
-{{jsonapi-paginate content=model}}

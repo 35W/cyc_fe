@@ -57,3 +57,18 @@ input:-webkit-autofill {
   width: 50px;
   text-align: center;
 }
+
+th.sortable {
+  background-image: url('/assets/images/both.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  cursor: pointer;
+}
+
+th.sortable.asc {
+  background-image: url('/assets/images/asc.png');
+}
+
+th.sortable.desc {
+  background-image: url('/assets/images/desc.png');
+}
