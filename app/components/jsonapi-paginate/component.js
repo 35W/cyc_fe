@@ -1,11 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  currentPage: Ember.computed.alias('content.page.number'),
-  totalPages: Ember.computed.alias('content.page.pages'),
-  nextPage: Ember.computed.alias('content.page.nextPage'),
-  prevPage: Ember.computed.alias('content.page.prevPage'),
-  perPage: Ember.computed.alias('content.page.perPage'),
+  currentPage: Ember.computed.alias('content.meta.page.number'),
+  totalPages: Ember.computed.alias('content.meta.page.pages'),
+  nextPage: Ember.computed.alias('content.meta.page.next_page'),
+  prevPage: Ember.computed.alias('content.meta.page.prev_page'),
+  perPage: Ember.computed.alias('content.meta.page.per_page'),
 
 
   pages: Ember.computed('currentPage', 'totalPages', function(){

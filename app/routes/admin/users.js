@@ -14,14 +14,15 @@ export default Ember.Route.extend({
   },
 
   model (params) {
-    return this.store.query( 'user', params );
+    let queryParams = {
+      'page[number]': params.page, 'page[size]': params.per_page,
+      sort: params.sort
+    };
+    return this.store.query( 'user', queryParams );
   },
 
   afterModel (model) {
     let queryParams = this.paramsFor( this.routeName );
-    model.setProperties({
-      sort: queryParams.sort
-    })
-    model.set( 'page', Ember.Object.create(this.store._metadataFor( 'user' )) );
+    model.set( 'sort', queryParams.sort );
   }
 });
